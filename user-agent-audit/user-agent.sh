@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 echo "User Agent is closing [y/n]"
