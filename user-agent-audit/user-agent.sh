@@ -17,13 +17,3 @@ else
 	exit 1;
 fi;
 
-
-
-map $http_user_agent $blockedagent {
-default         0;
-~*malicious     1;
-~*bot           1;
-~*backdoor      1;
-~*crawler       1;
-~*bandit        1;
-}
