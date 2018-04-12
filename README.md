@@ -17,3 +17,27 @@ Listed at below which rules added until today
         ```
         
         If you have any information about version of Nginx Server you passed from that rule .
+
+        
+*	Buffer Size Control
+
+	- If you control the block size of request you can use that  script.
+	```sh
+        $ cd buffer_size
+        $ ./buffer_size
+    ```
+
+
+
+
+        
+*	Prevent Image Hotlinking
+
+	- If other servers getting images from your domain, server, cdn or anything else. This will be spend your bandwith out of your control.
+	- So you can handle this problem shown at as above.
+
+	```sh
+        $ cd hotlink 
+        $ ./blocker.sh 
+    ```
+    
