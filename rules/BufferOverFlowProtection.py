@@ -1,23 +1,11 @@
-import re
-import os
-
+from wordChecker import wordChecker
 
 class BufferOverFlowProtection:
 
     def __init__(self):
-        self.words = ["client_body_buffer_size", "client_header_buffer_size", "client_max_body_size", "large_client_header_buffers"]
+        words = ["client_body_buffer_size", "client_header_buffer_size", "client_max_body_size", "large_client_header_buffers"]
+        self.wordChecker = wordChecker(words=words)
 
+    def bfWords(self, fileName):
 
-    def checkWords(self, fileName):
-
-        points = 0
-
-        for line in open(fileName, "r"):
-
-            for word in self.words:
-                if re.search(word, line):
-                    points = points + 1
-
-
-        return points
-    
+        return self.wordChecker.checkWords(fileName)

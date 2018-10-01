@@ -1,0 +1,3 @@
+[
+  "test_slowhttp.py::TestSlowHttpDosAttackProtection::test_word_count"
+]
