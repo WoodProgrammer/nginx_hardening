@@ -1,0 +1,3 @@
+[
+  "test_bfprotect.py::TestBufferOverFlowProtection::test_word_count"
+]
